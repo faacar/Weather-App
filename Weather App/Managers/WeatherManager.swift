@@ -15,7 +15,7 @@ protocol WeatherManagerDelegate {
 }
 
 struct WeatherManager {
-    private let apiKey = "4d02e24b7b7d76db53c460b250987a28"
+    private let apiKey = {YOUR_KEY}
     var delegate: WeatherManagerDelegate?
     
     func fetchWeather(cityName: String) {
